@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 20 Challenge: HTML Container Elements</title>
+    <style>
+        body{
+            background-color: #f6f2fe
+        }
+
+        h1{
+            color: #885df1;
+            text-decoration: underline;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        h2{
+            color: #272044;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: normal;
+
+        }
+
+        button{
+            display: block;
+            margin: 20px auto;
+            color:#885df1;
+            padding: 12px 20px;
+            background: transparent;
+            border:1px solid #885df1;
+            border-radius: 25px;
+            box-shadow: 3px 3px 3px #CFCBD5;
+            transition: all 200ms ease-in-out;
+        }
+
+        button:hover{
+            background: #885df1;
+            color:white;
+            cursor: pointer;
+        }
+
+        p{
+            text-align: center;
+        }
+
+        img{
+            display: block;
+            margin: auto;
+        }
+
+        ul{
+           list-style-type: none;
+           text-align: center;
+           padding: 0%;
+        }
+
+        a{
+            text-decoration: none;
+            transition: all 200ms ease-in-out;
+        }
+
+        a:hover{
+            text-decoration: underline;
+
+        }
+
+        li{
+            display: inline;
+            margin: 0 15px;
+        }
+
+        .email{
+            color:#885df1
+        }
+
+        .media{
+            color:#885df1
+        }
+
+        .coders{
+            color:blue;
+        }
+
+        .courses{
+            color:red;
+        }
+
+        .stories{
+            color: green;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>
+        SheCodes
+    </h1>
+    <h2>
+        Coding Workshop
+    </h2>
+
+    <button>Apply now</button>
+    <ul>
+        <li>
+            <a href="https://www.shecodes.io/students" target="_blank" class="coders">
+                Coders
+            </a>
+        </li>
+        <li>
+            <a href="https://www.shecodes.io/workshops" target="_blank" class="courses">
+                Courses
+            </a>
+        </li>
+        <li>
+            <a href="https://www.shecodes.io/stories" target="_blank" class="stories">
+                Stories
+            </a>
+        </li>
+    </ul>
+
+    <hr>
+
+    <p>
+        <strong>
+            More info
+        </strong>
+    </p>
+
+    <img src="data:image/jpeg;base64,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"
+        width="300" alt="women coding"/>
+
+    <p>
+        <span class="email">Email:</span> hello@shecodes.io <span class="media">Instagram:</span> @shecodes.io
+    </p>
+</body>
+</html>
